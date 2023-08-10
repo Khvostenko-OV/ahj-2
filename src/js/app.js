@@ -1,15 +1,14 @@
-let currPos = 16;
-let newPos = 0;
-let cell = document.getElementById('cell_0');
-
+const cells = document.querySelectorAll('.cell');
 const goblin = document.createElement('img');
 goblin.src = '../static/img/goblin.png';
+
+let currPos = 16;
+let newPos = 0;
 
 setInterval( () => {
   do {
     newPos = Math.floor(Math.random() * 16);
   } while (newPos == currPos);
-  cell = document.getElementById(`cell_${newPos}`);
-  cell.appendChild(goblin);
+  cells[newPos].appendChild(goblin);
   currPos = newPos;
 }, 1000);
