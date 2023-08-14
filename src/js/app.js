@@ -1,8 +1,10 @@
+import goblinImg from '../static/img/goblin.png';
+
 const counter = document.querySelector('.counter');
 const field = document.querySelector('.field');
 const cells = document.querySelectorAll('.cell');
 const goblin = document.createElement('img');
-goblin.src = '../static/img/goblin.png';
+goblin.src = goblinImg;
 goblin.classList = 'goblin';
 
 let currPos = 16;
