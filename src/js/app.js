@@ -1,4 +1,4 @@
-import goblinImg from '../static/img/goblin.png';
+import goblinImg from '../img/goblin.png';
 
 const counter = document.querySelector('.counter');
 const field = document.querySelector('.field');
