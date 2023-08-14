@@ -20,7 +20,7 @@ setInterval( () => {
 field.addEventListener('click', (e) => {
   if (e.target.classList[0] === 'goblin') {
     counter.textContent = ++count;
-    parnt = e.target.parentElement;
+    const parnt = e.target.parentElement;
     parnt.style = 'background: green;';
     setTimeout(() => {parnt.style = 'background: white;'}, 100);
   } else {
